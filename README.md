@@ -20,6 +20,16 @@ Open `http://127.0.0.1:5000`.
 
 GitHub Pages can serve the static `index.html` file in this repository. It cannot run the Flask `app.py` backend, so use `index.html` for GitHub Pages deployment and use `app.py` for the local Flask version.
 
+## Deploy on Render
+
+Create a new Render Web Service from this GitHub repository.
+
+- Environment: `Python`
+- Build Command: `pip install -r requirements.txt`
+- Start Command: `gunicorn app:app`
+
+Render will run the Flask app from `app.py`.
+
 ## Use a Tableau Public dashboard
 
 After publishing your workbook to Tableau Public, open `templates/dashboard.html` and replace the empty `data-tableau-url` value with your public view URL.
