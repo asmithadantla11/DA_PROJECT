@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Housing Trends | Home{% endblock %}
+{% block content %}
+<section class="hero">
+  <img src="{{ url_for('static', filename='images/housing-hero.png') }}" alt="Modern residential housing neighborhood">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Tableau Housing Analytics</p>
+    <h1>Visualizing Housing Sales Trends and Its Prices</h1>
+    <a class="primary-action" href="{{ url_for('dashboard') }}">Get Started</a>
+  </div>
+</section>
+<section class="quick-strip" aria-label="Project highlights">
+  <div>
+    <strong>21,609</strong>
+    <span>Clean records</span>
+  </div>
+  <div>
+    <strong>511,619</strong>
+    <span>Average sale price</span>
+  </div>
+  <div>
+    <strong>38,643,798</strong>
+    <span>Basement sqft total</span>
+  </div>
+</section>
+{% endblock %}

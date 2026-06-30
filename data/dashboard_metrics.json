@@ -1,0 +1,44 @@
+{
+  "summary": {
+    "record_count": 21609,
+    "average_sale_price": 511619,
+    "basement_area_total": 38643798
+  },
+  "sales_by_renovation": [
+    {"bin": "250K", "label": "32,500K", "value": 130, "color": "#ff8b78"},
+    {"bin": "275K", "label": "61,875K", "value": 222, "color": "#df3446"},
+    {"bin": "300K", "label": "39,900K", "value": 132, "color": "#b91648"},
+    {"bin": "325K", "label": "122,335K", "value": 378, "color": "#f7c9c5"},
+    {"bin": "350K", "label": "60,200K", "value": 170, "color": "#ef4246"},
+    {"bin": "375K", "label": "51,750K", "value": 139, "color": "#f8d0cb"},
+    {"bin": "400K", "label": "100,900K", "value": 254, "color": "#4f9a55"},
+    {"bin": "425K", "label": "109,815K", "value": 260, "color": "#f7b9b4"},
+    {"bin": "450K", "label": "93,635K", "value": 213, "color": "#ff927d"},
+    {"bin": "475K", "label": "76,950K", "value": 170, "color": "#8ccf7c"},
+    {"bin": "500K", "label": "57,000K", "value": 137, "color": "#df3446"},
+    {"bin": "525K", "label": "76,000K", "value": 152, "color": "#fb7a69"},
+    {"bin": "550K", "label": "68,775K", "value": 129, "color": "#f26357"},
+    {"bin": "575K", "label": "87,450K", "value": 158, "color": "#237241"},
+    {"bin": "600K", "label": "53,475K", "value": 93, "color": "#c91446"},
+    {"bin": "625K", "label": "66,000K", "value": 110, "color": "#f8b9b5"}
+  ],
+  "age_distribution": [
+    {"age": 50, "value": 50, "color": "#947393"},
+    {"age": 63, "value": 63, "color": "#b69bb2"},
+    {"age": 68, "value": 68, "color": "#a5a33a"},
+    {"age": 71, "value": 71, "color": "#d1d47a"},
+    {"age": 75, "value": 75, "color": "#e15159"},
+    {"age": 76, "value": 76, "color": "#ff8e82"},
+    {"age": 88, "value": 88, "color": "#737373"},
+    {"age": 94, "value": 94, "color": "#bbb8b6"},
+    {"age": 96, "value": 96, "color": "#a98078"},
+    {"age": 118, "value": 118, "color": "#d8b5ad"}
+  ],
+  "feature_distribution": [
+    {"age": 4, "bathrooms": 1530, "bedrooms": 2070, "floors": 1190},
+    {"age": 12, "bathrooms": 1225, "bedrooms": 1565, "floors": 930},
+    {"age": 13, "bathrooms": 1180, "bedrooms": 1530, "floors": 910},
+    {"age": 14, "bathrooms": 1150, "bedrooms": 1515, "floors": 855},
+    {"age": 15, "bathrooms": 1100, "bedrooms": 1495, "floors": 835}
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "row_count": 21609,
+  "required_fields": [
+    "Sale Price",
+    "No of Bedrooms",
+    "No of Bathrooms",
+    "No of Floors",
+    "Flat Area (in Sqft)",
+    "Basement Area (in Sqft)",
+    "Age of House (in Years)",
+    "Years Since Renovation",
+    "Ever Renovated",
+    "Sale Price Bin"
+  ],
+  "null_counts": {
+    "Sale Price": 0,
+    "No of Bedrooms": 0,
+    "No of Bathrooms": 0,
+    "No of Floors": 0,
+    "Flat Area (in Sqft)": 0,
+    "Basement Area (in Sqft)": 0,
+    "Age of House (in Years)": 0,
+    "Years Since Renovation": 0,
+    "Ever Renovated": 0,
+    "Sale Price Bin": 0
+  },
+  "sale_price_average": 511619,
+  "basement_area_total": 38643798,
+  "ready_for_tableau": true
+}
