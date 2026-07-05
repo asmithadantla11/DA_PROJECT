@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Housing Trends</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home">Housing Trends</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#story">Story</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <img src="static/images/housing-hero.png" alt="Modern residential housing neighborhood">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Tableau Housing Analytics</p>
+          <h1>Visualizing Housing Sales Trends and Its Prices</h1>
+          <a class="primary-action" href="#dashboard">Get Started</a>
+        </div>
+      </section>
+
+      <section class="quick-strip" aria-label="Project highlights">
+        <div>
+          <strong>21,609</strong>
+          <span>Clean records</span>
+        </div>
+        <div>
+          <strong>511,619</strong>
+          <span>Average sale price</span>
+        </div>
+        <div>
+          <strong>38,643,798</strong>
+          <span>Basement sqft total</span>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <img src="static/images/housing-hero.png" alt="Residential buildings used for housing analytics">
+        <div class="about-copy">
+          <p class="eyebrow">Problem Definition</p>
+          <h1>Visualizing Housing Market Trends: An Analysis of Sale Prices and Features using Tableau</h1>
+          <p>The project analyzes housing data to understand how sale price, renovation status, age, bedroom count, bathroom count, floor count, and basement area contribute to market patterns.</p>
+          <ul class="check-list">
+            <li>Clean and validate a finalized housing dataset for Tableau.</li>
+            <li>Build dashboards that summarize sales, property age, and feature distributions.</li>
+            <li>Publish the story to Tableau Public and embed it inside a web interface.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="process-band">
+        <article>
+          <h2>Data Readiness</h2>
+          <p>Fields are renamed for clarity, calculated fields are added, and validation checks confirm null counts, ranges, and Tableau-ready formats.</p>
+        </article>
+        <article>
+          <h2>Visualization</h2>
+          <p>The dashboard combines KPIs, bar charts, and a renovation age distribution view to make housing trends easier to compare.</p>
+        </article>
+        <article>
+          <h2>Performance</h2>
+          <p>The workbook should use only required sheets, practical filters, and optimized views before publishing to Tableau Public.</p>
+        </article>
+      </section>
+
+      <section class="page-shell" id="dashboard">
+        <div class="section-heading">
+          <p class="eyebrow">Interactive Dashboard</p>
+          <h1>Comprehensive House Data Analysis</h1>
+        </div>
+
+        <section class="dashboard-grid" aria-label="Comprehensive house data analysis dashboard">
+          <aside class="kpi-column">
+            <div class="metric-row">
+              <span>Count of Transformed Housing Data</span>
+              <strong data-metric="record_count">21,609</strong>
+            </div>
+            <div class="metric-row">
+              <span>Average Sales Prices</span>
+              <strong data-metric="average_sale_price">511,619</strong>
+            </div>
+            <div class="metric-row">
+              <span>Area of the House from Basement (in Sqft)</span>
+              <strong data-metric="basement_area_total">38,643,798</strong>
+            </div>
+          </aside>
+          <article class="chart-panel">
+            <h2>Total Sales By Years Since Renovation</h2>
+            <canvas id="salesChart" width="900" height="420" aria-label="Total sales by years since renovation"></canvas>
+          </article>
+          <article class="chart-panel">
+            <h2>Distribution of House Age by Renovation Status</h2>
+            <canvas id="agePieChart" width="520" height="420" aria-label="House age distribution by renovation status"></canvas>
+          </article>
+          <article class="chart-panel">
+            <h2>House Age Distribution by Number of Bathrooms, Bedrooms and Floors</h2>
+            <canvas id="featureChart" width="900" height="460" aria-label="House age distribution by house features"></canvas>
+          </article>
+        </section>
+      </section>
+
+      <section class="page-shell" id="story">
+        <div class="section-heading">
+          <p class="eyebrow">Storyboard</p>
+          <h1>Housing Insights Story</h1>
+        </div>
+        <div class="story-tabs" role="tablist" aria-label="Housing story points">
+          <button class="story-tab active" data-story-target="story-features" type="button">Features</button>
+          <button class="story-tab" data-story-target="story-renovation" type="button">Renovation Status</button>
+          <button class="story-tab" data-story-target="story-sales" type="button">Sales Boost</button>
+        </div>
+        <section class="story-layout">
+          <article class="story-copy active" id="story-features">
+            <h2>House age distribution is more influenced by bedroom count than by bathrooms and floors.</h2>
+            <p>Across the selected ages, bedroom values consistently dominate the grouped distribution, making them a stronger feature signal for comparison.</p>
+          </article>
+          <article class="story-copy" id="story-renovation">
+            <h2>The age of houses varies based on renovation status, providing a comprehensive overview.</h2>
+            <p>Renovation status helps separate older properties that have been updated from homes that may require additional investment.</p>
+          </article>
+          <article class="story-copy" id="story-sales">
+            <h2>Recent renovations can support stronger property sales.</h2>
+            <p>Sales grouped by years since renovation reveal where updated houses cluster across price bins and help identify practical market positioning.</p>
+          </article>
+          <div class="story-visual">
+            <canvas id="storyChart" width="900" height="520" aria-label="Story visualization"></canvas>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="static/js/dashboard.js"></script>
+  </body>
+</html>
