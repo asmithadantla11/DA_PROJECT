@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Housing Trends | About{% endblock %}
+{% block content %}
+<section class="about-section">
+  <img src="{{ url_for('static', filename='images/housing-hero.png') }}" alt="Residential buildings used for housing analytics">
+  <div class="about-copy">
+    <p class="eyebrow">Problem Definition</p>
+    <h1>Visualizing Housing Market Trends: An Analysis of Sale Prices and Features using Tableau</h1>
+    <p>The project analyzes housing data to understand how sale price, renovation status, age, bedroom count, bathroom count, floor count, and basement area contribute to market patterns.</p>
+    <ul class="check-list">
+      <li>Clean and validate a finalized housing dataset for Tableau.</li>
+      <li>Build dashboards that summarize sales, property age, and feature distributions.</li>
+      <li>Publish the story to Tableau Public and embed it inside this Flask web interface.</li>
+    </ul>
+  </div>
+</section>
+<section class="process-band">
+  <article>
+    <h2>Data Readiness</h2>
+    <p>Fields are renamed for clarity, calculated fields are added, and validation checks confirm null counts, ranges, and Tableau-ready formats.</p>
+  </article>
+  <article>
+    <h2>Visualization</h2>
+    <p>The dashboard combines KPIs, bar charts, and a renovation age distribution view to make housing trends easier to compare.</p>
+  </article>
+  <article>
+    <h2>Performance</h2>
+    <p>The workbook should use only required sheets, practical filters, and optimized views before publishing to Tableau Public.</p>
+  </article>
+</section>
+{% endblock %}

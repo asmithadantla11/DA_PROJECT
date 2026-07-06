@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Housing Trends | Dashboard{% endblock %}
+{% block content %}
+<section class="page-shell">
+  <div class="section-heading">
+    <p class="eyebrow">Interactive Dashboard</p>
+    <h1>Comprehensive House Data Analysis</h1>
+  </div>
+
+  <div id="tableau-embed" class="tableau-embed" data-tableau-url=""></div>
+
+  <section class="dashboard-grid" id="local-dashboard" aria-label="Comprehensive house data analysis dashboard">
+    <aside class="kpi-column">
+      <div class="metric-row">
+        <span>Count of Transformed Housing Data</span>
+        <strong data-metric="record_count">21,609</strong>
+      </div>
+      <div class="metric-row">
+        <span>Average Sales Prices</span>
+        <strong data-metric="average_sale_price">511,619</strong>
+      </div>
+      <div class="metric-row">
+        <span>Area of the House from Basement (in Sqft)</span>
+        <strong data-metric="basement_area_total">38,643,798</strong>
+      </div>
+    </aside>
+    <article class="chart-panel">
+      <h2>Total Sales By Years Since Renovation</h2>
+      <canvas id="salesChart" width="900" height="420" aria-label="Total sales by years since renovation"></canvas>
+    </article>
+    <article class="chart-panel">
+      <h2>Distribution of House Age by Renovation Status</h2>
+      <canvas id="agePieChart" width="520" height="420" aria-label="House age distribution by renovation status"></canvas>
+    </article>
+    <article class="chart-panel">
+      <h2>House Age Distribution by Number of Bathrooms, Bedrooms and Floors</h2>
+      <canvas id="featureChart" width="900" height="460" aria-label="House age distribution by house features"></canvas>
+    </article>
+  </section>
+</section>
+{% endblock %}

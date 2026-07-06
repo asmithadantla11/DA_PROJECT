@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Housing Trends | Story{% endblock %}
+{% block content %}
+<section class="page-shell">
+  <div class="section-heading">
+    <p class="eyebrow">Storyboard</p>
+    <h1>Housing Insights Story</h1>
+  </div>
+  <div class="story-tabs" role="tablist" aria-label="Housing story points">
+    <button class="story-tab active" data-story-target="story-features" type="button">Features</button>
+    <button class="story-tab" data-story-target="story-renovation" type="button">Renovation Status</button>
+    <button class="story-tab" data-story-target="story-sales" type="button">Sales Boost</button>
+  </div>
+  <section class="story-layout">
+    <article class="story-copy active" id="story-features">
+      <h2>House age distribution is more influenced by bedroom count than by bathrooms and floors.</h2>
+      <p>Across the selected ages, bedroom values consistently dominate the grouped distribution, making them a stronger feature signal for comparison.</p>
+    </article>
+    <article class="story-copy" id="story-renovation">
+      <h2>The age of houses varies based on renovation status, providing a comprehensive overview.</h2>
+      <p>Renovation status helps separate older properties that have been updated from homes that may require additional investment.</p>
+    </article>
+    <article class="story-copy" id="story-sales">
+      <h2>Recent renovations can support stronger property sales.</h2>
+      <p>Sales grouped by years since renovation reveal where updated houses cluster across price bins and help identify practical market positioning.</p>
+    </article>
+    <div class="story-visual">
+      <canvas id="storyChart" width="900" height="520" aria-label="Story visualization"></canvas>
+    </div>
+  </section>
+</section>
+{% endblock %}
